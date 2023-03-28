@@ -3,6 +3,7 @@ package com.example.guests.view
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.guests.model.GuestModel
@@ -65,6 +66,19 @@ class GuestFormActivity : AppCompatActivity(), View.OnClickListener {
                 binding.radioPresent.isChecked = true
             } else {
                 binding.radioAbsent.isChecked = true
+            }
+        })
+
+        viewModel.saveGuest.observe(this, Observer {
+            if (it) {
+                if(guestId == 0) {
+                    Toast.makeText(applicationContext, "successful insertion", Toast.LENGTH_SHORT).show()
+                } else {
+                    Toast.makeText(applicationContext, "successful update", Toast.LENGTH_SHORT).show()
+                }
+                finish()
+            } else {
+                Toast.makeText(applicationContext, "FAIL", Toast.LENGTH_SHORT).show()
             }
         })
     }
