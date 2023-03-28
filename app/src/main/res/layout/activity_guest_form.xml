@@ -7,41 +7,38 @@
     android:padding="20dp"
     tools:context=".view.GuestFormActivity">
 
-    <TextView
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/text_name"
-        android:layout_width="0dp"
+        style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:fontFamily="@font/abeezee"
-        android:includeFontPadding="true"
-        android:text="@string/name"
-        android:textSize="20sp"
+        android:layout_marginTop="32dp"
+        android:hint="Name"
+        app:helperText="Required*"
+        app:helperTextTextColor="@color/md_theme_dark_errorContainer"
+        app:startIconDrawable="@drawable/ic_person"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" >
 
-    <EditText
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/edit_name"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_name" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/text_present"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="22dp"
-        android:layout_marginStart="22dp"
+      android:layout_marginTop="40dp"
         android:fontFamily="@font/abeezee"
         android:includeFontPadding="true"
         android:text="@string/is_present"
         android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edit_name" />
+        app:layout_constraintTop_toBottomOf="@id/text_name" />
 
     <RadioGroup
         android:id="@+id/radio_check"
@@ -61,7 +58,7 @@
             android:fontFamily="@font/abeezee"
             android:includeFontPadding="true"
             android:text="@string/present"
-            android:textColor="@color/purple_700"
+            android:textColor="@color/md_theme_dark_inverseOnSurface"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_present" />
@@ -74,7 +71,7 @@
             android:fontFamily="@font/abeezee"
             android:includeFontPadding="true"
             android:text="@string/absent"
-            android:textColor="#CCB30015"
+            android:textColor="@color/md_theme_dark_inverseOnSurface"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/radio_check"

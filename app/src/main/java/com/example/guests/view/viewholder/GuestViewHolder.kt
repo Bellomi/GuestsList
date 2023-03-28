@@ -19,7 +19,7 @@ class GuestViewHolder(
             listener.onClick(guest.id)
         }
 
-        bind.textName.setOnLongClickListener {
+        bind.deleteBtn.setOnClickListener {
 
             AlertDialog.Builder(itemView.context)
                 .setTitle("Guest Removal")

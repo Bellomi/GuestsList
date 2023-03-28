@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setSupportActionBar(binding.appBarMain.toolbar)
-
         binding.appBarMain.fab.setOnClickListener { view ->
             startActivity(Intent(applicationContext, GuestFormActivity::class.java))
         }

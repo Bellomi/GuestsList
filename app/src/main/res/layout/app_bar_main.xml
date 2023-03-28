@@ -7,16 +7,19 @@
     tools:context=".view.MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/Theme.Guests.AppBarOverlay">
+        android:background="@color/md_theme_dark_onTertiaryContainer"
+        >
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/Theme.Guests.PopupOverlay" />
+            android:background="@color/md_theme_dark_onTertiaryContainer"
+
+            android:theme="@style/Theme.Guests"/>
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -29,6 +32,6 @@
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="16dp"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        app:srcCompat="@drawable/ic_edit" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

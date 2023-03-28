@@ -11,8 +11,11 @@
     <string name="menu_absent_guests">Absent Guests</string>
     <string name="menu_all_guests">All Guests</string>
     <string name="name">Name</string>
-    <string name="is_present">Is Present</string>
+    <string name="is_present">Is Present?</string>
     <string name="present">Present</string>
     <string name="save">Save</string>
     <string name="absent">Absent</string>
+    <string name="paula_s_party">Paula´s Party</string>
+    <string name="those_who_won_t_attend_are_missing_out">Those who won´t attend are missing out</string>
+    <string name="guest">Guest</string>
 </resources>
