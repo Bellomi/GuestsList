@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:text="@string/paula_s_party"
-        android:textColor="@color/md_theme_dark_onErrorContainer"
+        android:textColor="@color/md_theme_dark_inverseOnSurface"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <TextView
@@ -34,5 +34,5 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/those_who_won_t_attend_are_missing_out"
-        android:textColor="@color/md_theme_dark_onErrorContainer"/>
+        android:textColor="@color/md_theme_dark_inverseOnSurface"/>
 </LinearLayout>
